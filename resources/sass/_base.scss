@@ -259,6 +259,8 @@ input{
         border-radius: 8px;
         padding-top: 20px;
         padding-bottom: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
         .add__news__letter__main__box{
             text-align: center;
@@ -330,7 +332,106 @@ input{
 
 
 
+.all__instagram__section{
+    background-color:$background;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .all__ig__box{
+        text-align: center;
+        h4{
+            @extend .add__page__title;
+            font-family: $font-stack-medium;
+        }
+
+        .add__instagram__item{
+            display: flex;
+            justify-content: space-between;
+            gap: 1em;
+            flex-wrap: wrap;
+            margin-top: 20px;
+
+            a {
+                img{
+                    width: 170px;
+                    height: 170px;
+                    object-fit: contain;
+                    transition: 0.5s ease-out;
+                &:hover{
+                    transform: scale(1.05);
+                    transition: 0.5s ease-in;
+                }
+                }
+            }
+        }
+    }
+
+}
+
+
+.add__footer{
+    height: 180px;
+    background-color: $primary;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .footer__container{
+        text-align: center;
+
+        .add__footer__link__box{
+            max-width: 560px;
+            color: $surface;
+            display: flex;
+            gap: 0.5em;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            margin-top: 20px;
+            a{
+                font-family: $font-stack-regular;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: $surface;
+            }
+        }
+    }
+}
 
 
 
+.add__copyright__footer{
+    min-height: 56px;
+    background-color: $primary-variant;
+
+    .last_footer__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 56px;
+
+        span{
+            font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $surface;
+        }
+
+        .add__footer__social__icon{
+            display: flex;
+            align-items: center;
+            gap: 1.2em;
+        }
+    }
+
+
+
+}
 

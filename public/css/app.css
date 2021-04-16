@@ -228,7 +228,7 @@ input {
   }
 }
 
-.add__page__title {
+.add__page__title, .all__instagram__section .all__ig__box h4 {
   font-size: 38px;
   font-weight: bold;
   font-stretch: normal;
@@ -257,6 +257,8 @@ input {
   border-radius: 8px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .add__newsletter__section .add__newsletter__box .add__news__letter__main__box {
   text-align: center;
@@ -321,4 +323,90 @@ input {
   background-color: #ffffff;
   color: #f66757;
   font-family: "Brandon Grotesque Regular", sans-serif;
+}
+
+.all__instagram__section {
+  background-color: #f3f3f3;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.all__instagram__section .all__ig__box {
+  text-align: center;
+}
+.all__instagram__section .all__ig__box h4 {
+  font-family: "Brandon Grotesque Medium", sans-serif;
+}
+.all__instagram__section .all__ig__box .add__instagram__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.all__instagram__section .all__ig__box .add__instagram__item a img {
+  width: 170px;
+  height: 170px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.5s ease-out;
+}
+.all__instagram__section .all__ig__box .add__instagram__item a img:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in;
+}
+
+.add__footer {
+  height: 180px;
+  background-color: #f66757;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.add__footer .footer__container {
+  text-align: center;
+}
+.add__footer .footer__container .add__footer__link__box {
+  max-width: 560px;
+  color: #ffffff;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+}
+.add__footer .footer__container .add__footer__link__box a {
+  font-family: "Brandon Grotesque Regular", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.add__copyright__footer {
+  min-height: 56px;
+  background-color: #fa8072;
+}
+.add__copyright__footer .last_footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 56px;
+}
+.add__copyright__footer .last_footer__container span {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.add__copyright__footer .last_footer__container .add__footer__social__icon {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
 }

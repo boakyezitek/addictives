@@ -159,4 +159,56 @@
     </div>
 </section>
 
+<section class="all__instagram__section">
+   <div class="add__custom__container all__ig__box">
+
+    <img src="img/main/ic-instagram.svg"
+    class="icinstagram">
+    <h4 class="add__page__title">Suivez-nous sur Instagram !</h4>
+    <div class="add__instagram__item">
+        <a href="#">
+            <img src="img/instagram/img-insta-4.png"
+            srcset="img/instagram/img-insta-4@2x.png 2x,
+                    img/instagram/img-insta-4@3x.png 3x"
+            class="img_insta_4">
+        </a>
+
+        <a href="#">
+            <img src="img/instagram/img-insta-4.png"
+            srcset="img/instagram/img-insta-4@2x.png 2x,
+                    img/instagram/img-insta-4@3x.png 3x"
+            class="img_insta_4">
+        </a>
+
+        <a href="#">
+            <img src="img/instagram/img-insta-4.png"
+            srcset="img/instagram/img-insta-4@2x.png 2x,
+                    img/instagram/img-insta-4@3x.png 3x"
+            class="img_insta_4">
+        </a>
+
+        <a href="#">
+            <img src="img/instagram/img-insta-4.png"
+            srcset="img/instagram/img-insta-4@2x.png 2x,
+                    img/instagram/img-insta-4@3x.png 3x"
+            class="img_insta_4">
+        </a>
+
+        <a href="#">
+            <img src="img/instagram/img-insta-4.png"
+            srcset="img/instagram/img-insta-4@2x.png 2x,
+                    img/instagram/img-insta-4@3x.png 3x"
+            class="img_insta_4">
+        </a>
+        <a href="#">
+            <img src="img/instagram/img-insta-4.png"
+            srcset="img/instagram/img-insta-4@2x.png 2x,
+                    img/instagram/img-insta-4@3x.png 3x"
+            class="img_insta_4">
+        </a>
+
+    </div>
+   </div>
+</section>
+
 @endsection
