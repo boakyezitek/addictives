@@ -22,6 +22,24 @@ body {
 .slide-content {
   padding-left: 10%;
 }
+.slide-content p {
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #141415;
+}
+.slide-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #141415;
+}
 
 .slider_button {
   display: flex;
