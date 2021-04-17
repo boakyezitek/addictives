@@ -21,33 +21,15 @@
             Nouveautés
         </h2>
        <div class="add__content__box">
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
+        @foreach ($books as $book)
+        <a href="#">
+            <img src="img/content/first_books/{{ $book["books"]}}.png"
+            srcset="img/content/first_books/{{ $book["books"]}}@2x.png 2x,
+                    img/content/first_books/{{ $book["books"]}}@3x.png 3x"
             class="book_1">
           </a>
+        @endforeach
 
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
-            class="book_1">
-          </a>
-
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
-            class="book_1">
-          </a>
-
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
-            class="book_1">
-          </a>
        </div>
 
        <div class="add__page__btn mt-5">
@@ -63,33 +45,14 @@
             À paraître
         </h2>
        <div class="add__content__box">
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
+        @foreach ($books2 as $book)
+        <a href="#">
+            <img src="img/content/second_books/{{ $book["books"]}}.png"
+            srcset="img/content/second_books/{{ $book["books"]}}@2x.png 2x,
+                    img/content/second_books/{{ $book["books"]}}@3x.png 3x"
             class="book_1">
           </a>
-
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
-            class="book_1">
-          </a>
-
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
-            class="book_1">
-          </a>
-
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
-            class="book_1">
-          </a>
+        @endforeach
        </div>
 
        <div class="add__page__btn mt-5">
@@ -113,33 +76,14 @@
             Vous pourriez aimer…
         </h2>
        <div class="add__content__box">
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
+        @foreach ($books3 as $book)
+        <a href="#">
+            <img src="img/content/third_books/{{ $book["books"]}}.png"
+            srcset="img/content/third_books/{{ $book["books"]}}@2x.png 2x,
+                    img/content/third_books/{{ $book["books"]}}@3x.png 3x"
             class="book_1">
           </a>
-
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
-            class="book_1">
-          </a>
-
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
-            class="book_1">
-          </a>
-
-          <a href="#">
-            <img src="img/content/book-1.png"
-            srcset="img/content/book-1@2x.png 2x,
-                    img/content/book-1@3x.png 3x"
-            class="book_1">
-          </a>
+        @endforeach
        </div>
     </div>
 </section>
@@ -166,47 +110,14 @@
     class="icinstagram">
     <h4 class="add__page__title">Suivez-nous sur Instagram !</h4>
     <div class="add__instagram__item">
+        @foreach ($insta as $item)
         <a href="#">
-            <img src="img/instagram/img-insta-4.png"
-            srcset="img/instagram/img-insta-4@2x.png 2x,
-                    img/instagram/img-insta-4@3x.png 3x"
-            class="img_insta_4">
-        </a>
-
-        <a href="#">
-            <img src="img/instagram/img-insta-4.png"
-            srcset="img/instagram/img-insta-4@2x.png 2x,
-                    img/instagram/img-insta-4@3x.png 3x"
-            class="img_insta_4">
-        </a>
-
-        <a href="#">
-            <img src="img/instagram/img-insta-4.png"
-            srcset="img/instagram/img-insta-4@2x.png 2x,
-                    img/instagram/img-insta-4@3x.png 3x"
-            class="img_insta_4">
-        </a>
-
-        <a href="#">
-            <img src="img/instagram/img-insta-4.png"
-            srcset="img/instagram/img-insta-4@2x.png 2x,
-                    img/instagram/img-insta-4@3x.png 3x"
-            class="img_insta_4">
-        </a>
-
-        <a href="#">
-            <img src="img/instagram/img-insta-4.png"
-            srcset="img/instagram/img-insta-4@2x.png 2x,
-                    img/instagram/img-insta-4@3x.png 3x"
-            class="img_insta_4">
-        </a>
-        <a href="#">
-            <img src="img/instagram/img-insta-4.png"
-            srcset="img/instagram/img-insta-4@2x.png 2x,
-                    img/instagram/img-insta-4@3x.png 3x"
-            class="img_insta_4">
-        </a>
-
+            <img src="img/content/instagram/{{ $item["insta_img"]}}.png"
+            srcset="img/content/instagram/{{ $item["insta_img"]}}@2x.png 2x,
+                    img/content/instagram/{{ $item["insta_img"]}}@3x.png 3x"
+            class="book_1">
+          </a>
+        @endforeach
     </div>
    </div>
 </section>

@@ -199,8 +199,8 @@ input {
 }
 .add__content__section .add__content__box {
   display: flex;
-  justify-content: space-between;
-  gap: 1em;
+  gap: 2em;
+  flex-wrap: wrap;
 }
 .add__content__section .add__content__box a {
   text-decoration: none;
