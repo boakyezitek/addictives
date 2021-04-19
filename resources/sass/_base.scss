@@ -149,9 +149,16 @@ input{
     backdrop-filter: blur(10px);
     box-shadow: 0 3px 14px 0 rgba(20, 20, 21, 0.05);
     background-color: $surface;
+    @media (min-width:$breakpoint-small-mobile) {
+        display: none;
+    }
+    @media (min-width: $breakpoint-midd-desktop) {
+        display: initial;
+    }
 
     .add__menu__box {
         display: flex;
+        flex-wrap: wrap;
         height: 100%;
         align-items: center;
         justify-content: space-between;
@@ -164,6 +171,7 @@ input{
         .add__main__menu {
             ul {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
                 height: 100%;
@@ -191,6 +199,7 @@ input{
 
     .add__social {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         gap: 1.5em;
@@ -435,3 +444,28 @@ input{
 
 }
 
+/* @mobile styles*/
+.mobile-nav{
+  height: 62px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 14px 0 rgba(20, 20, 21, 0.05);
+  background-color:$surface;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+  @media (min-width: $breakpoint-small-mobile) {
+    display: flex;
+}
+  @media (min-width: $breakpoint-midd-desktop) {
+    display: none;
+}
+  .menu-icons{
+      display: flex;
+      height: 100%;
+      gap: 1em;
+      align-items: center;
+  }
+}
