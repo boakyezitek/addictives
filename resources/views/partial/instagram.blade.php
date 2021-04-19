@@ -5,7 +5,8 @@
      class="icinstagram">
      <h4 class="add__page__title">Suivez-nous sur Instagram !</h4>
      <div class="add__instagram__item">
-@include("components.instagram_component");
+        @include("components.instagram_component")
+
      </div>
     </div>
  </section>
