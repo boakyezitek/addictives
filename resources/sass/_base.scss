@@ -152,7 +152,7 @@ input{
     @media (min-width:$breakpoint-small-mobile) {
         display: none;
     }
-    @media (min-width: $breakpoint-midd-desktop) {
+    @media (min-width:$breakpoint-tablet) {
         display: initial;
     }
 
@@ -212,17 +212,44 @@ input{
 
     .add__content__box {
         display: flex;
-        gap: 2em;
         flex-wrap: wrap;
+        gap: 0.8em;
+        margin-left: 8px;
+        @media (min-width: $breakpoint-tablet) {
+            gap: 2em;
+            flex-wrap: wrap;
+            justify-content: none;
+        }
 
         a {
             text-decoration: none;
             img {
-                width: 270px;
-                height: 373px;
-                object-fit: contain;
-                border-radius: 8px;
-                transition: 0.5s ease-out;
+
+                border-radius: 6.7px;
+                @media (min-width:$breakpoint-small-mobile) {
+                    width: 137px;
+                    height: 216px;
+
+                }
+
+                @media (min-width:$breakpoint-small-mobile2) {
+                    width: 147px;
+                    height: 226px;
+
+                }
+
+                @media (min-width:$breakpoint-small-mobile3) {
+                    width: 147px;
+                    height: 226px;
+                }
+                @media (min-width: $breakpoint-tablet) {
+                    width: 270px;
+                    height: 373px;
+                    object-fit: contain;
+                    border-radius: 8px;
+                    transition: 0.5s ease-out;
+                }
+
                 &:hover{
                     transform: scale(1.05);
                     transition: 0.5s ease-in;
@@ -232,8 +259,12 @@ input{
     }
 }
 .add__custom__container {
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
+    @media (min-width:$breakpoint-tablet) {
+        max-width: 80%;
+    }
+
     @media (min-width: $breakpoint-large-desktop) {
         max-width: 63%;
     }
@@ -304,10 +335,11 @@ input{
                 margin-top:16px;
 
                 .add__newsletter__input__box{
-                    width: 330px;
+                    max-width: 330px;
                     height: 50px;
                     background-color:rgba(255, 255, 255, 0.138);
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
                     justify-content: center;
                     padding-left: 10px;
@@ -355,16 +387,30 @@ input{
 
         .add__instagram__item{
             display: flex;
-            justify-content: space-between;
-            gap: 1em;
+            gap: 0.8em;
             flex-wrap: wrap;
             margin-top: 20px;
-
+            justify-content: center;
+            margin-left: 3px;
+            margin-right: 3px;
+            @media(min-width:$breakpoint-tablet){
+                justify-content: space-between;
+            }
             a {
                 img{
-                    width: 170px;
-                    height: 170px;
-                    object-fit: contain;
+                    @media(min-width: $breakpoint-small-mobile){
+                        width: 90px;
+                        height: 90px;
+                        object-fit: contain;
+
+                    }
+
+                    @media(min-width:$breakpoint-tablet){
+                        width: 170px;
+                        height: 170px;
+                        object-fit: contain;
+                    }
+
                     transition: 0.5s ease-out;
                 &:hover{
                     transform: scale(1.05);
@@ -422,6 +468,7 @@ input{
         justify-content: space-between;
         align-items: center;
         min-height: 56px;
+        flex-wrap: wrap;
 
         span{
             font-size: 18px;
@@ -459,7 +506,7 @@ input{
   @media (min-width: $breakpoint-small-mobile) {
     display: flex;
 }
-  @media (min-width: $breakpoint-midd-desktop) {
+  @media (min-width: $breakpoint-tablet) {
     display: none;
 }
   .menu-icons{

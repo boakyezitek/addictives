@@ -66,7 +66,7 @@
         <img src="img/main/banner.png"
         srcset="img/main/banner@2x.png 2x,
                 img/banner@3x.png 3x"
-        class="banner">
+        class="banner img-fluid">
     </div>
 </section>
 
