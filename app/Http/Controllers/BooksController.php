@@ -56,7 +56,7 @@ class BooksController extends Controller
         $books3 = collect($third_books);
         $insta = collect($instagram);
 
-        return view('home',  ["books" => $books->all(), "books2" => $books2->all(),"books3" => $books3->all(),"insta" => $insta->all()]);
+        return view('pages.home',  ["books" => $books->all(), "books2" => $books2->all(),"books3" => $books3->all(),"insta" => $insta->all()]);
     }
 
 }
