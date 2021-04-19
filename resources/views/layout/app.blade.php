@@ -125,7 +125,7 @@
         </footer>
         <section class="add__copyright__footer">
             <div class="add__custom__container last_footer__container">
-                <span>© Tous droits réservés Éditions Addictives</span>
+                <span>© <span class="copy_sub_text">Tous droits réservés</span> Éditions Addictives</span>
                 <div class="add__footer__social__icon">
                     <a href="#">
                         <img src="img/footer/ic-facebook.svg"

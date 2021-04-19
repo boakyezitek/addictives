@@ -31,9 +31,10 @@ input {
 
 .slide-content {
   padding-left: 10%;
+  position: relative;
 }
 .slide-content p {
-  font-size: 28px;
+  padding-top: 10px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -41,8 +42,17 @@ input {
   letter-spacing: normal;
   color: #141415;
 }
+@media (min-width: 320px) {
+  .slide-content p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .slide-content p {
+    font-size: 28px;
+  }
+}
 .slide-content h1 {
-  font-size: 48px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -50,11 +60,32 @@ input {
   letter-spacing: normal;
   color: #141415;
 }
+@media (min-width: 320px) {
+  .slide-content h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .slide-content h1 {
+    font-size: 48px;
+  }
+}
 
 .slider_button {
   display: flex;
   gap: 0.8em;
   margin-top: 49px;
+}
+@media (min-width: 320px) {
+  .slider_button {
+    position: absolute;
+    top: 320%;
+  }
+}
+@media (min-width: 768px) {
+  .slider_button {
+    position: relative;
+  }
 }
 
 .slick-slide[aria-hidden=true] {
@@ -104,8 +135,15 @@ input {
   opacity: 1;
 }
 
-.slick-list {
-  padding: 25px 253px !important;
+@media (min-width: 320px) {
+  .slick-list {
+    padding: 30px !important;
+  }
+}
+@media (min-width: 768px) {
+  .slick-list {
+    padding: 25px 253px !important;
+  }
 }
 
 .add__page__btn, .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__white__btn {
@@ -126,6 +164,16 @@ input {
   line-height: 48px;
   cursor: pointer;
   font-family: "Brandon Grotesque Regular", sans-serif;
+}
+@media (min-width: 320px) {
+  .add__page__btn, .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__white__btn {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .add__page__btn, .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__white__btn {
+    display: none;
+  }
 }
 
 .add__outline__btn {
@@ -235,16 +283,16 @@ input {
     height: 216px;
   }
 }
-@media (min-width: 360px) {
+@media (min-width: 375px) {
   .add__content__section .add__content__box a img {
-    width: 147px;
+    width: 162px;
     height: 226px;
   }
 }
-@media (min-width: 370px) {
+@media (min-width: 411px) {
   .add__content__section .add__content__box a img {
-    width: 147px;
-    height: 226px;
+    width: 180px;
+    height: 266px;
   }
 }
 @media (min-width: 768px) {
@@ -278,13 +326,38 @@ input {
 }
 
 .add__page__title, .all__instagram__section .all__ig__box h4 {
-  font-size: 38px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #141415;
+}
+@media (min-width: 320px) {
+  .add__page__title, .all__instagram__section .all__ig__box h4 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .add__page__title, .all__instagram__section .all__ig__box h4 {
+    font-size: 38px;
+  }
+}
+
+.heading__with__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading__with__button .small {
+  height: 33px;
+  line-height: 33px;
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .heading__with__button .small {
+    display: none;
+  }
 }
 
 .add__banner__box {
@@ -293,6 +366,22 @@ input {
 .add__banner__box .add__banner__box {
   background-color: #a9304e;
   border-radius: 8px;
+}
+@media (min-width: 320px) {
+  .add__banner__box .add__banner__box .mobile {
+    display: block;
+  }
+  .add__banner__box .add__banner__box .desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .add__banner__box .add__banner__box .mobile {
+    display: none;
+  }
+  .add__banner__box .add__banner__box .desktop {
+    display: block;
+  }
 }
 
 .add__newsletter__section {
@@ -341,8 +430,6 @@ input {
   margin-top: 16px;
 }
 .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__newsletter__input__box {
-  max-width: 330px;
-  height: 50px;
   background-color: rgba(255, 255, 255, 0.138);
   display: flex;
   flex-wrap: wrap;
@@ -352,6 +439,19 @@ input {
   padding-right: 10px;
   border-radius: 8px;
 }
+@media (min-width: 320px) {
+  .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__newsletter__input__box {
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 768px) {
+  .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__newsletter__input__box {
+    width: 330px;
+    height: 50px;
+  }
+}
 .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__newsletter__input__box input {
   flex: 1;
   border: none !important;
@@ -359,6 +459,7 @@ input {
   color: #fff;
   background: none;
   font-family: "Brandon Grotesque Regular", sans-serif;
+  height: 48px;
 }
 .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__newsletter__input__box input::-moz-placeholder {
   color: #ffffff;
@@ -369,10 +470,30 @@ input {
 .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__newsletter__input__box input::placeholder {
   color: #ffffff;
 }
+@media (min-width: 320px) {
+  .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__newsletter__input__box .arrow {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__newsletter__input__box .arrow {
+    display: none;
+  }
+}
 .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__white__btn {
   background-color: #ffffff;
   color: #f66757;
   font-family: "Brandon Grotesque Regular", sans-serif;
+}
+@media (min-width: 320px) {
+  .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__white__btn {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .add__newsletter__section .add__newsletter__box .add__news__letter__main__box .add__newsletter-input-group .add__white__btn {
+    display: block;
+  }
 }
 
 .all__instagram__section {
@@ -425,10 +546,12 @@ input {
 }
 
 .add__footer {
-  height: 180px;
+  height: auto;
   background-color: #f66757;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .add__footer .footer__container {
   text-align: center;
@@ -459,6 +582,18 @@ input {
   min-height: 56px;
   background-color: #fa8072;
 }
+@media (min-width: 320px) {
+  .add__copyright__footer {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .add__copyright__footer {
+    padding-left: initial;
+    padding-right: initial;
+  }
+}
 .add__copyright__footer .last_footer__container {
   display: flex;
   justify-content: space-between;
@@ -467,6 +602,7 @@ input {
   flex-wrap: wrap;
 }
 .add__copyright__footer .last_footer__container span {
+  font-family: "Brandon Grotesque Regular", sans-serif;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -474,6 +610,16 @@ input {
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
+}
+@media (min-width: 320px) {
+  .add__copyright__footer .last_footer__container span .copy_sub_text {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .add__copyright__footer .last_footer__container span .copy_sub_text {
+    display: block;
+  }
 }
 .add__copyright__footer .last_footer__container .add__footer__social__icon {
   display: flex;

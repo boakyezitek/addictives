@@ -29,24 +29,41 @@ input{
 
 .slide-content {
     padding-left: 10%;
+
+    position: relative;
     p {
-        font-size: 28px;
+padding-top: 10px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         color: $on-background;
+        @media(min-width:$breakpoint-small-mobile){
+           font-size: 16px;
+         }
+
+         @media(min-width:$breakpoint-tablet){
+            font-size: 28px;
+        }
     }
 
     h1 {
-        font-size: 48px;
+
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.25;
         letter-spacing: normal;
         color: $on-background;
+
+        @media(min-width:$breakpoint-small-mobile){
+            font-size: 24px;
+         }
+
+         @media(min-width:$breakpoint-tablet){
+            font-size: 48px;
+        }
     }
 }
 
@@ -54,6 +71,15 @@ input{
     display: flex;
     gap: 0.8em;
     margin-top: 49px;
+
+    @media(min-width:$breakpoint-small-mobile){
+       position: absolute;
+       top:320%;
+     }
+
+     @media(min-width:$breakpoint-tablet){
+       position: relative;
+    }
 }
 
 .slick-slide[aria-hidden="true"] {
@@ -104,7 +130,15 @@ input{
 }
 
 .slick-list {
-    padding: 25px 253px !important;
+
+
+    @media(min-width:$breakpoint-small-mobile){
+        padding: 30px !important;
+     }
+
+     @media(min-width:$breakpoint-tablet){
+        padding: 25px 253px !important;
+    }
 }
 
 .add__page__btn{
@@ -125,6 +159,14 @@ input{
  line-height: 48px;
  cursor: pointer;
  font-family: $font-stack-regular;
+
+ @media(min-width:$breakpoint-small-mobile){
+    display: none;
+ }
+
+ @media(min-width:$breakpoint-tablet){
+     display: none;
+}
 }
 
 .add__outline__btn {
@@ -233,15 +275,16 @@ input{
                 }
 
                 @media (min-width:$breakpoint-small-mobile2) {
-                    width: 147px;
-                    height: 226px;
-
-                }
-
-                @media (min-width:$breakpoint-small-mobile3) {
-                    width: 147px;
+                    width: 162px;
                     height: 226px;
                 }
+
+                @media (min-width:$breakpoint-mobile) {
+                    width: 180px;
+                    height: 266px;
+                }
+
+
                 @media (min-width: $breakpoint-tablet) {
                     width: 270px;
                     height: 373px;
@@ -271,13 +314,40 @@ input{
 }
 
 .add__page__title {
-    font-size: 38px;
+
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: $on-background;
+
+    @media(min-width:$breakpoint-small-mobile){
+       font-size: 30px;
+    }
+
+    @media(min-width:$breakpoint-tablet){
+        font-size: 38px;
+        }
+}
+
+.heading__with__button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .small{
+  height: 33px;
+  line-height: 33px;
+  border-radius: 20px;
+  @media(min-width:$breakpoint-tablet){
+    display: none;
+    }
+    }
+
+
+
+
 }
 
 .add__banner__box{
@@ -286,6 +356,26 @@ input{
     .add__banner__box{
         background-color: #a9304e;
         border-radius: 8px;
+
+        @media(min-width:$breakpoint-small-mobile){
+            .mobile{
+                display: block;
+            }
+
+            .desktop{
+                display: none;
+            }
+        }
+
+        @media(min-width:$breakpoint-tablet){
+            .mobile{
+                display: none;
+            }
+
+            .desktop{
+                display: block;
+            }
+        }
     }
 }
 
@@ -335,8 +425,6 @@ input{
                 margin-top:16px;
 
                 .add__newsletter__input__box{
-                    max-width: 330px;
-                    height: 50px;
                     background-color:rgba(255, 255, 255, 0.138);
                     display: flex;
                     flex-wrap: wrap;
@@ -346,6 +434,16 @@ input{
                     padding-right: 10px;
                     border-radius: 8px;
 
+                    @media(min-width:$breakpoint-small-mobile){
+                        width: auto;
+                        flex-wrap: wrap;
+                        justify-content:space-evenly;
+                    }
+
+                    @media(min-width:$breakpoint-tablet){
+                        width: 330px;
+                        height: 50px;
+                    }
 
                     input{
                         flex: 1;
@@ -354,8 +452,19 @@ input{
                         color: #fff;
                         background: none;
                         font-family: $font-stack-regular;
+                        height: 48px;
                         &::placeholder{
                             color: $surface;
+                        }
+                    }
+
+                    .arrow{
+                        @media(min-width:$breakpoint-small-mobile){
+                            display: block;
+                        }
+
+                        @media(min-width:$breakpoint-tablet){
+                          display: none;
                         }
                     }
                 }
@@ -365,6 +474,14 @@ input{
                     background-color:$surface;
                     color: $primary;
                     font-family: $font-stack-regular;
+
+                    @media(min-width:$breakpoint-small-mobile){
+                        display: none;
+                    }
+
+                    @media(min-width:$breakpoint-tablet){
+                      display: block;
+                    }
                 }
             }
         }
@@ -425,10 +542,12 @@ input{
 
 
 .add__footer{
-    height: 180px;
+    height:auto;
     background-color: $primary;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     .footer__container{
         text-align: center;
@@ -462,6 +581,15 @@ input{
 .add__copyright__footer{
     min-height: 56px;
     background-color: $primary-variant;
+    @media(min-width:$breakpoint-small-mobile){
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    @media(min-width:$breakpoint-tablet){
+        padding-left:initial;
+        padding-right: initial;
+    }
 
     .last_footer__container{
         display: flex;
@@ -471,6 +599,7 @@ input{
         flex-wrap: wrap;
 
         span{
+            font-family: $font-stack-regular;
             font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -478,6 +607,16 @@ input{
   line-height: normal;
   letter-spacing: normal;
   color: $surface;
+
+  .copy_sub_text{
+    @media(min-width:$breakpoint-small-mobile){
+        display: none;
+    }
+
+    @media(min-width:$breakpoint-tablet){
+      display: block;
+    }
+  }
         }
 
         .add__footer__social__icon{

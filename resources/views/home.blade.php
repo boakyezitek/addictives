@@ -17,9 +17,15 @@
 
 <section class="add__content__section">
     <div class="add__custom__container mt-5">
-        <h2 class="add__page__title mb-3">
-            Nouveautés
-        </h2>
+        <div class="heading__with__button">
+            <h2 class="add__page__title mb-3">
+                Nouveautés
+            </h2>
+            <div class="add__page__btn small">
+                Voir toutes
+            </div>
+        </div>
+
        <div class="add__content__box">
         @foreach ($books as $book)
         <a href="#">
@@ -41,9 +47,15 @@
 
 
     <div class="add__custom__container mt-5">
-        <h2 class="add__page__title mb-3">
-            À paraître
-        </h2>
+        <div class="heading__with__button">
+            <h2 class="add__page__title mb-3">
+                À paraître
+            </h2>
+            <div class="add__page__btn small">
+                Voir tout
+            </div>
+        </div>
+
        <div class="add__content__box">
         @foreach ($books2 as $book)
         <a href="#">
@@ -63,10 +75,11 @@
 
 <section class="add__banner__box">
     <div class="add__custom__container add__banner__box mt-5 mb-5">
+        <img src="img/main/banner-mobile.png" class="banner mobile img-fluid" />
         <img src="img/main/banner.png"
         srcset="img/main/banner@2x.png 2x,
                 img/banner@3x.png 3x"
-        class="banner img-fluid">
+        class="banner img-fluid desktop">
     </div>
 </section>
 
@@ -96,7 +109,11 @@
            <h3>Inscrivez-vous !</h3>
            <span>Restez informé de toutes les actualités.</span>
            <div class="add__newsletter-input-group">
-               <div class="add__newsletter__input__box"><input placeholder="Votre adresse mail"/></div>
+               <div class="add__newsletter__input__box">
+                   <input placeholder="Votre adresse mail"/>
+                   <img src="img/icons/ic-arrow-next.svg"
+                   class="arrow">
+                </div>
                <div class="add__white__btn">Je m’inscris !</div>
            </div>
         </div>
